@@ -23,6 +23,7 @@ nav{
 }
 
 .nav-item{
+    /**/
     color: rgb(100, 100, 100);
     /**/
     font-size: 0.85rem;
@@ -30,9 +31,9 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
     padding: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     /**/
     transition: 400ms ease;
 }
@@ -50,6 +51,7 @@ nav{
 
 
 #main-content{
+    /* TODO: Remove this height after putting all the content*/
     height: 80vh;
     /**/
     background-color: white;
@@ -59,6 +61,7 @@ footer{
     height: 10vh;
     /**/
     background-color: rgb(220, 220, 220);
+    color: rgb(100, 100, 100);
     /**/
     font-size: 0.6rem;
     /**/
