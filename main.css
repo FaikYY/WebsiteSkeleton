@@ -1,71 +1,192 @@
 /* DEFAULT VALUES */
-*{
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-html, body{
-    height: 100%;
-    width: 100%;    
+a {
+  text-decoration: none;
+  color: gainsboro;
 }
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  /* To animate scroll on clicks to a tag */
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
 /******************/
-
-
-nav{
-    height: 10vh;
-    /**/
-    background-color: rgb(240, 240, 240);
-    /**/
-    display: flex;
-    justify-content: space-around;
+nav {
+  height: 10vh;
+  scroll-snap-align: start;
+  /**/
+  background-color: #8b64cc;
+  /**/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.nav-item{
-    /**/
-    color: rgb(100, 100, 100);
-    /**/
-    font-size: 0.85rem;
-    /**/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    /**/
-    transition: 400ms ease;
+nav .nav-item {
+  /**/
+  color: gainsboro;
+  /**/
+  font-size: 1rem;
+  /**/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /**/
+  -webkit-transition: 400ms ease;
+  transition: 400ms ease;
 }
 
-.nav-item:hover{
-    background-color: rgb(200, 200, 200);
-    /**/
-    font-size: 1.1rem;
-    /**/
-    border-radius: 0.25rem;
-    cursor: pointer;
+nav .nav-item :hover {
+  -webkit-transition: 400ms ease;
+  transition: 400ms ease;
+  /**/
+  font-size: 1.2rem;
+  /**/
+  border-radius: 0.25rem;
+  cursor: pointer;
 }
 
-
-
-
-#main-content{
-    /* TODO: Remove this height after putting all the content*/
-    height: 80vh;
-    /**/
-    background-color: white;
+nav #logo-container {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Sacramento", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-footer{
-    height: 10vh;
-    /**/
-    background-color: rgb(220, 220, 220);
-    color: rgb(100, 100, 100);
-    /**/
-    font-size: 0.6rem;
-    /**/
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
+nav #nav-item-appointment {
+  color: #646464;
+  background-color: gainsboro;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
 }
+
+nav #nav-item-appointment :hover {
+  font-size: 1rem;
+}
+
+nav #nav-item-appointment a {
+  color: #646464;
+}
+
+nav #nav-item-appointment .circle::before {
+  content: "+";
+  height: 40px;
+  width: 40px;
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  font-family: courier;
+  color: #646464;
+}
+
+/******************/
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+#section-homepage {
+  background-color: #c8c8c8;
+  height: 90vh;
+}
+
+#section-services {
+  background-color: blue;
+}
+
+#section-contact {
+  background-color: green;
+}
+
+#section-appointment {
+  background-color: pink;
+  height: 90vh;
+}
+
+/******************/
+#scroll-button {
+  font-size: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 2px solid #646464;
+  background-color: beige;
+  position: fixed;
+  top: 85%;
+  right: 2%;
+}
+
+/******************/
+footer {
+  height: 10vh;
+  /**/
+  background-color: gainsboro;
+  color: #646464;
+  /**/
+  font-size: 0.6rem;
+  /**/
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/******************/
+/*# sourceMappingURL=main.css.map */

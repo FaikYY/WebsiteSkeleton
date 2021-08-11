@@ -1,34 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <div class="nav-item">
-            <p>Anasayfa</p>
-        </div>
-        <div class="nav-item">
-            <p>Hizmetler</p>
-        </div>
-        <div class="nav-item">
-            <p>Hakkimizda</p>
-        </div>
-        <div class="nav-item">
-            <p>Iletisim</p>
-        </div>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Connect to CSS file -->
+    <link rel="stylesheet" href="main.css" />
+
+    <!--  -->
+    <!-- Link for the Font used in Logo -->
+    <!--  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lavanta Kuru Temizleme</title>
+  </head>
+  <body>
+    <!--  -->
+    <!-- NAVBAR STARTS -->
+    <!--  -->
+    <nav id="navbar">
+      <div class="nav-item">
+        <a href="#section-homepage">Anasayfa</a>
+      </div>
+      <div class="nav-item">
+        <a href="#section-services">Hizmetler</a>
+      </div>
+      <div id="logo-container">
+        <a>Lavanta </a>
+      </div>
+      <div class="nav-item">
+        <a href="#section-contact">Iletisim</a>
+      </div>
+
+      <button
+        onClick="document.getElementById('section-appointment').scrollIntoView();"
+        id="nav-item-appointment"
+        class="nav-item"
+      >
+        <div class="circle"></div>
+        Randevu Al
+      </button>
     </nav>
+    <!-- NAVBAR ENDS -->
 
-    <div id="main-content">
+    <!--  -->
+    <!-- CONTENT (SECTIONS) STARTS -->
+    <!--  -->
+    <section id="section-homepage">
+      <h1>Homepage</h1>
+    </section>
+    <section id="section-services">
+      <h1>Services</h1>
+    </section>
+    <section id="section-contact">
+      <h1>Contact</h1>
+    </section>
+    <section id="section-appointment">
+      <h1>Appointment</h1>
+    </section>
+    <!-- CONTENT (SECTIONS) ENDS -->
+
+    <!--  -->
+    <!-- SCROLL BUTTON STARTS -->
+    <!--  -->
+    <div id="scroll-button">
+      <a href="#navbar">Take Me to Homepage</a>
     </div>
+    <!-- SCROLL BUTTON ENDS -->
 
+    <!--  -->
+    <!-- FOOTER STARTS -->
+    <!--  -->
     <footer>
-        <h3>Copyright Lavanta Kuru Temizleme</h3>
+      <h3>Copyright Lavanta Kuru Temizleme</h3>
     </footer>
-
-</body>
+    <!-- FOOTER ENDS -->
+  </body>
 </html>
