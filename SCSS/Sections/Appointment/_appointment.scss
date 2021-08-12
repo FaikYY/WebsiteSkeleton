@@ -1,0 +1,43 @@
+#appointment-form-container {
+  width: 50%;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: rgb(66, 72, 116);
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  label {
+    color: rgba(125, 83, 198, 0.75);
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    background-color: rgba(84, 118, 138, 0.164);
+    padding: 10px;
+    margin: 10px 0; // add top and bottom margin
+    border: 1px solid rgb(84, 118, 138);
+    border-radius: 10px;
+  }
+}
+
+#appointment-image-container {
+  width: 50%;
+
+  img {
+    margin-top: 10rem;
+    width: 70%;
+  }
+}

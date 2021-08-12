@@ -20,6 +20,7 @@
     <!--  -->
     <!-- NAVBAR STARTS -->
     <!--  -->
+    <!-- TODO: Fix navbar item hover animations -->
     <nav id="navbar">
       <div class="nav-item">
         <a href="#section-homepage">Anasayfa</a>
@@ -49,7 +50,21 @@
     <!-- CONTENT (SECTIONS) STARTS -->
     <!--  -->
     <section id="section-homepage">
-      <h1>Homepage</h1>
+      <div id="homepage-header-maincontainer">
+        <div id="homepage-header-textcontainer">
+          <h3>SAVE 3 HOURS A WEEK</h3>
+          <h1>Say Goodbye to Laundry Day.</h1>
+          <p>
+            Rinse picks up cleans, and delivers your laundry and dry cleaning.
+          </p>
+        </div>
+      </div>
+      <div id="homepage-image-maincontainer">
+        <img
+          src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
+          alt="dry-cleaning"
+        />
+      </div>
     </section>
     <section id="section-services">
       <h1>Services</h1>
@@ -58,7 +73,41 @@
       <h1>Contact</h1>
     </section>
     <section id="section-appointment">
-      <h1>Appointment</h1>
+      <div id="appointment-form-container">
+        <h1>Randevu Formu</h1>
+        <form action="/my-handling-form-page" method="post">
+          <ul>
+            <li>
+              <label for="name">Isim ve Soyisim</label>
+              <input type="text" id="name-input" />
+            </li>
+            <li>
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone-input" />
+            </li>
+            <li>
+              <label for="mail">E-mail</label>
+              <input type="email" id="email-input" />
+            </li>
+            <li>
+              <label for="mail">Adres</label>
+              <input type="email" id="address-input" />
+            </li>
+            <li>
+              <label for="msg">Mesaj</label>
+              <textarea
+                name="msg"
+                id="message-input"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div id="appointment-image-container">
+        <img src="Src/form.svg" alt="" />
+      </div>
     </section>
     <!-- CONTENT (SECTIONS) ENDS -->
 

@@ -1,0 +1,43 @@
+#homepage-header-maincontainer {
+  background-color: rgb(245, 245, 245);
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  #homepage-header-textcontainer {
+    // background-color: aquamarine;
+    height: 45vh;
+    width: 55vh;
+
+    h3 {
+      color: rgba(182, 171, 231, 0.452);
+      padding-bottom: 2rem;
+    }
+
+    h1 {
+      color: rgb(84, 118, 138);
+      font-size: 4rem;
+      padding-bottom: 1.5rem;
+    }
+
+    p {
+      color: rgba(84, 118, 138, 0.55);
+      font-size: 1.5rem;
+    }
+  }
+}
+
+#homepage-image-maincontainer {
+  background-color: rgb(245, 245, 245);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 70%;
+  }
+}

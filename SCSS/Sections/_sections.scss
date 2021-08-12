@@ -9,6 +9,11 @@ section {
 #section-homepage {
   background-color: rgb(200, 200, 200);
   height: 90vh;
+
+  display: flex;
+
+  // Homepage
+  @import "Homepage/homepage";
 }
 #section-services {
   background-color: blue;
@@ -17,7 +22,11 @@ section {
   background-color: green;
 }
 #section-appointment {
-  background-color: pink;
   height: 90vh;
+
+  display: flex;
+
+  // Appointment
+  @import "Appointment/appointment";
 }
 /******************/

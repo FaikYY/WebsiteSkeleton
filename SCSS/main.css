@@ -60,8 +60,6 @@ nav .nav-item {
 }
 
 nav .nav-item :hover {
-  -webkit-transition: 400ms ease;
-  transition: 400ms ease;
   /**/
   font-size: 1.2rem;
   /**/
@@ -132,6 +130,66 @@ section {
 #section-homepage {
   background-color: #c8c8c8;
   height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#section-homepage #homepage-header-maincontainer {
+  background-color: whitesmoke;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#section-homepage #homepage-header-maincontainer #homepage-header-textcontainer {
+  height: 45vh;
+  width: 55vh;
+}
+
+#section-homepage #homepage-header-maincontainer #homepage-header-textcontainer h3 {
+  color: rgba(182, 171, 231, 0.452);
+  padding-bottom: 2rem;
+}
+
+#section-homepage #homepage-header-maincontainer #homepage-header-textcontainer h1 {
+  color: #54768a;
+  font-size: 4rem;
+  padding-bottom: 1.5rem;
+}
+
+#section-homepage #homepage-header-maincontainer #homepage-header-textcontainer p {
+  color: rgba(84, 118, 138, 0.55);
+  font-size: 1.5rem;
+}
+
+#section-homepage #homepage-image-maincontainer {
+  background-color: whitesmoke;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-homepage #homepage-image-maincontainer img {
+  width: 70%;
 }
 
 #section-services {
@@ -143,8 +201,62 @@ section {
 }
 
 #section-appointment {
-  background-color: pink;
   height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#section-appointment #appointment-form-container {
+  width: 50%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-appointment #appointment-form-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #424874;
+}
+
+#section-appointment #appointment-form-container ul {
+  list-style-type: none;
+}
+
+#section-appointment #appointment-form-container label {
+  color: rgba(125, 83, 198, 0.75);
+  font-weight: bold;
+}
+
+#section-appointment #appointment-form-container input,
+#section-appointment #appointment-form-container textarea {
+  width: 100%;
+  background-color: rgba(84, 118, 138, 0.164);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #54768a;
+  border-radius: 10px;
+}
+
+#section-appointment #appointment-image-container {
+  width: 50%;
+}
+
+#section-appointment #appointment-image-container img {
+  margin-top: 10rem;
+  width: 70%;
 }
 
 /******************/
