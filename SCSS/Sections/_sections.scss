@@ -1,0 +1,23 @@
+/////////////////
+// SECTION STARTS
+/////////////////
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+#section-homepage {
+  background-color: rgb(200, 200, 200);
+  height: 90vh;
+}
+#section-services {
+  background-color: blue;
+}
+#section-contact {
+  background-color: green;
+}
+#section-appointment {
+  background-color: pink;
+  height: 90vh;
+}
+/******************/

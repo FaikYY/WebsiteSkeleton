@@ -1,0 +1,82 @@
+/////////////////
+// NAVBAR STARTS
+/////////////////
+nav {
+  height: 10vh;
+  scroll-snap-align: start;
+  /**/
+  background-color: rgb(139, 100, 204);
+  /**/
+  display: flex;
+  justify-content: space-around;
+
+  .nav-item {
+    /**/
+    color: $light-text-color;
+    /**/
+    font-size: 1rem;
+    /**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /**/
+    transition: 400ms ease;
+
+    :hover {
+      transition: 400ms ease;
+      /**/
+      font-size: 1.2rem;
+      /**/
+      border-radius: 0.25rem;
+      cursor: pointer;
+    }
+  }
+
+  #logo-container {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: "Sacramento", cursive;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav-item-appointment {
+    :hover {
+      font-size: 1rem;
+    }
+
+    color: rgb(100, 100, 100);
+    background-color: $light-text-color;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    a {
+      color: $dark-text-color;
+    }
+
+    .circle::before {
+      content: "+";
+      height: 40px;
+      width: 40px;
+      font-size: 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-family: courier;
+      color: $dark-text-color;
+    }
+  }
+}
+/******************/

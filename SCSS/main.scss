@@ -1,0 +1,40 @@
+// VARIABLES
+$light-text-color: rgb(220, 220, 220);
+$dark-text-color: rgb(100, 100, 100);
+
+/* DEFAULT VALUES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $light-text-color;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+
+  /* To animate scroll on clicks to a tag */
+  scroll-behavior: smooth;
+
+  scroll-snap-type: y mandatory;
+}
+/******************/
+
+//////////////
+// IMPORTS
+//////////////
+// Navbar
+@import "Navbar/navbar";
+// Sections
+@import "Sections/sections";
+// Scroll Button
+@import "Scroll-Button/scroll-button";
+// Footer
+@import "Footer/footer";

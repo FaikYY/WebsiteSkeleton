@@ -1,0 +1,19 @@
+/////////////////
+// SCROLL BUTTON STARTS
+/////////////////
+#scroll-button {
+  font-size: 0.7rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 2px solid rgb(100, 100, 100);
+  background-color: beige;
+  position: fixed;
+  top: 85%;
+  right: 2%;
+}
+/******************/
